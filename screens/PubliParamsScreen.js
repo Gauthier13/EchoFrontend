@@ -35,14 +35,6 @@ function PubliParams(props) {
     // State qui reçoit l'uri de la photo qui vient d'être priseé
     const [uriPhoto, setUriPhoto] = useState(props.newPhoto[0].uri);
 
-    // console.log(uriPhoto);
-    // var postImage
-
-    // useEffect(() => {
-    //     postImage = `../../backend/tmp/${props.newPhoto[0].uri}`
-    //     // console.log(postImage);
-    // },[props.newPhoto[0].uri])
-
     const ip = '192.168.43.223'
     function handlePost(
         postImage,

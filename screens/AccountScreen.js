@@ -1,25 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from 'react-native';
-
-
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-
-
 import Publications from '../screenComponents/PublicationsAccount';
 import LikeAccount from '../screenComponents/LikeAccount';
-
-
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import {faShare, faLink, faLock, faEye } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-
 export default function account() {
   
   const Tab = createMaterialTopTabNavigator();
 
-    
   return (
     <View style={styles.container}>
       {/* bandeau */}
