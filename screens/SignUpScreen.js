@@ -13,8 +13,6 @@ import * as Google from 'expo-auth-session/providers/google';
 
 WebBrowser.maybeCompleteAuthSession();
 
-
-
 export default function login(props) {
 
   //username et password
@@ -88,41 +86,6 @@ export default function login(props) {
     }
     // console.log("nouvel utilisateur " + JSON.stringify(newDonnee));
   }
-
-
-  // const submitData = async () => {
-  //   await fetch('http://192.168.43.223:3000/signup', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify({
-  //       nom: nom,
-  //       prenom: prenom,
-  //       email: email,
-  //       username: userName,
-  //       password: password
-  //     })
-  //   }).then(res => res.json())
-  //     .then(data => {
-  //       console.log("envoie from front" + data);
-  //     }).catch(err => {
-  //       console.log("error", err);
-  //     })
-  // }
-
-  // const validate = (text) => {
-  //   const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
-  //   console.log(text, reg.test(text));
-  // };
-
-  // var tokenOk = () => {
-  //   setIsTokenValide(true)
-  //   if (isTokenValide) {
-  //     props.navigation.navigate('BottomNavigation', { screen: 'Home' })
-  //   } else {
-  //     <Text>Il y a eu un problème lors du signUp</Text>
-  //   }
-  //   setIsTokenValide(false)
-  // }
 
   return (
     <View style={styles.container}>

@@ -87,7 +87,6 @@ const BottomNavigation = () => {
       <Tab.Screen name="chat" component={chat} />
       <Tab.Screen name="profile" component={profile} />
       <Tab.Screen name="Account" component={Account} />
-      {/* <Tab.Screen name='HomePage2' component={HomePage2} /> */}
     </Tab.Navigator>
   )
 }
